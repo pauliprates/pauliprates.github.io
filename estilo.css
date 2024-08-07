@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#EFEAD8  ;
+    color: #5F7161;
+}
+
+.sobreMi{
+    background-color:#5F7161 ;
+    color: #EFEAD8;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.sobreMi h1{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.sobreMi p {
+    margin: 5px 0 ;
+    font-size:20px ;
+    padding: 10px;
+}
+.sobreMi img{
+    width: 100%;
+    max-width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeria{
+    margin: 0 40px 0 40px;
+    padding: 20px;
+
+}
+
+#barismo{
+    background-color: #D0C9C0;
+}
+#philomena{
+    background-color: #6D8B74;
+    color: #D0C9C0;
+}
+
+.galeria h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.galeria p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;
+    
+    
+}
+
+.galeria img{
+    width: 100%;
+    max-width: 200px;
+    margin: 55px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
