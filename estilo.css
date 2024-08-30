@@ -1,69 +1,81 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#EFEAD8  ;
+    background-color: #EFEAD8;
     color: #5F7161;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.sobreMi{
-    background-color:#5F7161 ;
+.sobreMi {
+    background-color: #5F7161;
     color: #EFEAD8;
-    padding: 50px;
+    padding: 2%;
     text-align: center;
     font-weight: bold;
 }
-.sobreMi h1{
-    margin: 20px;
-    font-size: 30px;
+
+.sobreMi h1 {
+    margin: 20px 0;
+    font-size: 20px;
 }
 
 .sobreMi p {
-    margin: 5px 0 ;
-    font-size:20px ;
-    padding: 10px;
+    margin: 5px;
+    padding: 10px 0;
+    font-size: 15px;
 }
-.sobreMi img{
-    width: 100%;
+.sobreMi img {
     max-width: 150px;
     border-radius: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.galeria{
-    margin: 0 40px 0 40px;
-    padding: 20px;
-
+.galeria h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+}
+.galeria {
+    max-width: 95%;
+    margin: 5px auto;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
-#barismo{
+#barismo {
     background-color: #D0C9C0;
 }
-#philomena{
+#philomena {
     background-color: #6D8B74;
     color: #D0C9C0;
-}
-
-.galeria h2{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 25px;
+    box-shadow: 2px 2px #00000018;
+    margin: 10px;
 }
 
 .galeria p {
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 22px;
-    
-    
+    margin: 15px;
 }
 
-.galeria img{
-    width: 100%;
-    max-width: 200px;
-    margin: 55px;
+.galeria img {
+    max-width: 80%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px #48484860;
+    margin: 5px;
+    transition: transform 0.3s ease;
 }
+.galeria img:hover {
+    transform: scale(1.20);
+    box-shadow: 10px 10px 8px #1b0e054c;
 
+}
+footer{
+    height: 60px;
+    font-size: 10px;
+}
