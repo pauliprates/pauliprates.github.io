@@ -74,7 +74,8 @@ body {
     position: relative;
     overflow: hidden;
 }
-.tarjeta::before{
+.tarjeta::before
+{
     content: "";
     position: absolute;
     inset: -10px 50px;
