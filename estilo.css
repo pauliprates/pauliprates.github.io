@@ -80,6 +80,7 @@ body {
     inset: -10px 50px;
     background: linear-gradient(315deg, #6D8B74, #D0C9C0);
     transition: 0.2s;
+    overflow: hidden;
     animation: animate 2s linear infinite;
 }
 .tarjeta:hover::before{
