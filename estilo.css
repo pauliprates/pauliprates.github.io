@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #EFEAD8;
     color: #5F7161;
-    
+
 }
 .container{
     display: flex;
@@ -14,28 +14,120 @@ body {
 }
 
 .sobreMi {
+    display: flex;
     background-color: #5F7161;
     color: #EFEAD8;
     padding: 2%;
     text-align: center;
     font-weight: bold;
+    flex-direction: column;
+    align-items: center;
 }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
 
 .sobreMi h1 {
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 40px;
+    animation: 2s fadeIn;
 }
 
 .sobreMi p {
     margin: 5px;
     padding: 10px 0;
-    font-size: 15px;
+    font-size: 18px;
 }
-.sobreMi img {
-    max-width: 150px;
-    border-radius: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contenedor{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.tarjeta{
+    height: 200px;
+    width: 200px;
+    background-color: #243829;
+    border-radius: 50%;
+    box-shadow: 12px 10px 16px #0000008c;
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    inset: -10px 50px;
+    background: linear-gradient(315deg, #6D8B74, #D0C9C0);
+    transition: 0.2s;
+    animation: animate 2s linear infinite;
+}
+.tarjeta:hover::before{
+    inset: -20px 0px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.tarjeta::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #5F7161;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.contenido{
+    position: absolute;
+    inset: 10px;
+    border: 3px solid #D0C9C0;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.contenido img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.tarjeta:hover .contenido img
+{
+    transform: scale(1.20);
+}
+
 .galeria h3{
     font-size: 20px;
     text-align: center;
@@ -76,6 +168,6 @@ body {
 
 }
 footer{
-    height: 60px;
-    font-size: 10px;
+    height: 100px;
+    font-size: 15px;
 }
